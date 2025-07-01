@@ -1,0 +1,32 @@
+# Ignore Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore virtual environment
+venv/
+
+# Ignore dotenv file with secrets
+.env
+
+# Ignore build artifacts
+*.egg-info/
+dist/
+build/
+
+# Ignore logs
+*.log
+
+# VSCode or other editor configs
+.vscode/
+
+# OS-specific
+.DS_Store
+
+# Testing/cache tools
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+
+# Jupyter
+.ipynb_checkpoints/
