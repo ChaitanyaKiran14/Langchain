@@ -30,3 +30,7 @@ fastapi
 uvicorn
 
 huggingface_hub
+langchain-huggingface
+sentence_transformers
+matplotlib 
+scikit-learn
