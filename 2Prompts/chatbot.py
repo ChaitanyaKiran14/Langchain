@@ -26,12 +26,13 @@ while True:
     if user_input.lower() == "exit":
         break
 
-    # Prepare prompt using your system template
     prompt_template = get_chat_prompt()
     messages = prompt_template.format_messages(user_input=user_input)
 
-    # Send message to model
     output = chat_model.invoke(messages)
     print("AI:", output.content)
 
     chatHistory.append({"user": user_input, "ai": output.content})
+    print(chatHistory)
+
+ 
