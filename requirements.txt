@@ -34,3 +34,6 @@ langchain-huggingface
 sentence_transformers
 matplotlib 
 scikit-learn
+
+
+pydantic
