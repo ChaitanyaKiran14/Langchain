@@ -35,5 +35,4 @@ sentence_transformers
 matplotlib 
 scikit-learn
 
-
 pydantic
