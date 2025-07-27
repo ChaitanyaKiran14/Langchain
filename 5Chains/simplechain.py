@@ -27,3 +27,4 @@ structured_output = model.with_structured_output(Person)
 chain = prompt | structured_output
 result = chain.invoke({"name": "heroine Katherine Langford"})
 print(result)
+chain.get_graph().print_ascii()
