@@ -20,6 +20,6 @@ prompt2 = PromptTemplate(
 parser = StrOutputParser()
 
 chain = prompt1 | model | parser | prompt2  | model|  parser
-result = chain.invoke({"topic": "Artificial Intelligence"})
+result = chain.invoke({"topic": "Novak Djokovic's career achievements"})
 print(result)
 chain.get_graph().print_ascii()
