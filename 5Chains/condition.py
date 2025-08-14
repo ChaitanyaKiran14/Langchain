@@ -17,12 +17,12 @@ class FeedbackSentiment(BaseModel):
 
 structured_output = model.with_structured_output(FeedbackSentiment)
 
+
 def detect_sentiment_with_feedback(feedback : str):
     sentiment_result = structured_output.invoke(feedback)
     return{
         "feedback": feedback,
         "sentiment": sentiment_result.sentiment
-
     }
 
 parser = StrOutputParser()
